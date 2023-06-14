@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block contenido %}
+    <h1 class="title">Soy Jorge Lopez, alumno de Coderhouse</h1>
+    <h3 class="tp final">Este es el trabajo final</h3>
+    <small>Es un blog sencillo en el cual se pueden publicar pequeños posteos</small>
+    <p><strong>GRACIAS TOTALES!!!</strong></p>
+    {% if post.post_image %}
+    <img src="{{ post.post_image.url }}">
+    {% endif %}
+{% endblock contenido %}
