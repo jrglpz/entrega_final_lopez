@@ -44,7 +44,7 @@ class UserEditForm(forms.Form):
 
 class AvatarFormulario(forms.ModelForm):
     user_image = forms.ImageField(label="imagen")
-    # Al cambiarlo, ya no nos va a mostrar el campo de usuarios, así que no podríamos enviarlo estando desde otro usuario
+   
 
 class AvatarFormulario(forms.Form):
     user_image = forms.ImageField(label="imagen")
